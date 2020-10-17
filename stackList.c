@@ -70,11 +70,11 @@ void Pop(struct node **q)
     
 void display(struct node *q)
 {
-    struct node *temp;
-    temp=q;
-    while(temp!=NULL)
+    //struct node *temp;        //Need not to create A temp extra variable for traversal
+    //temp=q;
+    while(q!=NULL)
     {
-        printf("\nELEMENTS ARE = %d\t",temp->data);
-        temp=temp->next;
+        printf("\nELEMENTS ARE = %d\t",q->data);
+        q=q->next;
     }
 }
